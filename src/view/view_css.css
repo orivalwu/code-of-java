@@ -1,0 +1,12 @@
+.button{
+    -fx-background-color: #20B2AA;
+    -fx-font: bold italic 12pt "Arial";
+    -fx-text-fill: white;
+}
+.label{
+    -fx-background-color:#F5F5DC ;
+    -fx-font: bold italic 12pt "Arial";
+}
+.text-area{
+    -fx-font: bold italic 12pt "Arial";
+}

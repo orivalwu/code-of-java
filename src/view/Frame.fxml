@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.Control">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.0" minWidth="10.0" prefWidth="411.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="189.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="95.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="95.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="181.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="95.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="addtext1" mnemonicParsing="false" onAction="#addFile1" prefHeight="30.0" prefWidth="120.0" text="选择" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Button>
+      <TextArea fx:id="text1" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+      <Button fx:id="addtext2" mnemonicParsing="false" onAction="#addFile2" prefHeight="30.0" prefWidth="120.0" text="选择" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Button>
+      <TextArea fx:id="text2" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+      <Button fx:id="result" mnemonicParsing="false" onAction="#calculate" prefHeight="30.0" prefWidth="120.0" text="计算" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Button>
+      <TextArea fx:id="text3" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+      <Label alignment="CENTER" prefHeight="45.0" prefWidth="412.0" text="文本一" textFill="MEDIUMBLUE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="45.0" prefWidth="412.0" text="文本二" textFill="MEDIUMBLUE" GridPane.rowIndex="2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="45.0" prefWidth="413.0" text="相同文本" textFill="MEDIUMBLUE" GridPane.rowIndex="4">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>
