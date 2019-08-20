@@ -1,2 +1,2 @@
-# code-of-java
+# java code
 learn java
